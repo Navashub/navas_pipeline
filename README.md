@@ -1,4 +1,4 @@
-# PipelineX
+# navas-etl
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -26,13 +26,13 @@ A flexible ELT (Extract, Load, Transform) pipeline implementation in Python with
 ## Installation
 
 ```bash
-pip install pipelinex
+pip install navas-etl
 ```
 
 ## Quick Start
 
 ```python
-from pipelinex import ApiExtractor, Cleaner, DbLoader
+from navas-etl import ApiExtractor, Cleaner, DbLoader
 
 # 1. Extract data from API
 extractor = ApiExtractor("https://api.example.com")
@@ -56,7 +56,7 @@ loader.load(cleaned_data, "users_table")
 
 #### API Extractor
 ```python
-from pipelinex import ApiExtractor
+from navas-etl import ApiExtractor
 
 extractor = ApiExtractor(base_url="https://api.example.com", auth=("user", "pass"))
 data = extractor.extract("endpoint", params={"param": "value"})
@@ -64,7 +64,7 @@ data = extractor.extract("endpoint", params={"param": "value"})
 
 #### CSV Extractor
 ```python
-from pipelinex import CsvExtractor
+from navas-etl import CsvExtractor
 
 extractor = CsvExtractor()
 df = extractor.extract("data.csv")
@@ -72,7 +72,7 @@ df = extractor.extract("data.csv")
 
 #### Database Extractor
 ```python
-from pipelinex import DbExtractor
+from navas-etl import DbExtractor
 
 extractor = DbExtractor("postgresql://user:pass@localhost:5432/db")
 df = extractor.extract("SELECT * FROM table")
