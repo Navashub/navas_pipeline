@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from pipelinex.transformers import Cleaner, Aggregator, Formatter
+from navas_etl.transformers import Cleaner, Aggregator, Formatter
 
 class TestCleaner:
     def test_drop_duplicates(self):

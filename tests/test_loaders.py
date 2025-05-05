@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from pipelinex.loaders import CsvLoader, JsonLoader, DbLoader
+from navas_etl.loaders import CsvLoader, JsonLoader, DbLoader
 from unittest.mock import patch, MagicMock
 
 class TestCsvLoader:

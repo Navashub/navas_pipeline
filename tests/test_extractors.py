@@ -1,6 +1,6 @@
 import pytest
 import pandas as pd
-from pipelinex.extractors import ApiExtractor, CsvExtractor, DbExtractor
+from navas_etl.extractors import ApiExtractor, CsvExtractor, DbExtractor
 from unittest.mock import patch, MagicMock
 
 class TestApiExtractor:
